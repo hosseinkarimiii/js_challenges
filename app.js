@@ -25,6 +25,9 @@ console.log(num); //output:?
 const arrow = (name) => name.toLocaleUpperCase();
 console.log(arrow("hosseinkarimi"));
 //challenge 4
+const numbers = [99, 3, 6, 8, 10, 77];
+const fun = numbers.filter((number) => number % 2 !== 0);
+console.log(fun);
 //Moderate challenges.
 //challenge 2
 //chllenge 3
