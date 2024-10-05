@@ -63,8 +63,44 @@
 // }
 // reverse("hello world");
 
-//chllenge 9, 6.	Create a function that returns the first element of an array.
-
+//chllenge 9,	Create a function that returns the first element of an array.
+// const array = [22, "ali", true, 10];
+// function Firstelement() {
+//   return array[0];
+// }
+// console.log(Firstelement());
+//challenge 10, Create a function that checks if a string is a palindrome.
+// function ispalindrome(str) {
+//   // Convert to lowercase
+//   str = str.toLowerCase();
+//   //Remove non-alphanumeric characters
+//   str.replace(/[^a-z0-9]/g, "");
+//   //reverse yh string
+//   const reversestr = str.split("").reverse("").join("");
+//   // Check if the original string is equal to the reversed string
+//   return str === reversestr;
+// }
+// const str1 = "madam";
+// const str2 = "232";
+// const str3 = "A man, a plan, a canal. Panama";
+// const str4 = "hossein";
+// console.log(ispalindrome(str1));
+// console.log(ispalindrome(str2));
+// console.log(ispalindrome(str3));
+// console.log(ispalindrome(str4));
+//challenge11, Write a function to count the number of vowels in a string.
+// function getcount(string) {
+//   let vowels = "aAeEiItoOuU";
+//   let vowelscount = 0;
+//   for (let i = 0; i < string.length; i++) {
+//     if (vowels.indexOf(string[i]) !== -1) {
+//       vowelscount += 1;
+//     }
+//   }
+//   return vowelscount;
+// }
+// console.log(getcount("hello im hossein and im a developer"));
+// console.log(getcount("in this season we count vowels"));
 //intermedate challenges:
 
 //Advanced challenges:
