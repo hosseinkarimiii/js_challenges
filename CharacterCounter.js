@@ -1,22 +1,20 @@
 class CharacterCounter {
   constructor(characterSet) {
-    this.characterSet = characterSet;
+    this.characterSet = new Set(
+      [...characterSet].map((char) => char.toLowerCase())
+    );
   }
 
   count(inputText) {
     let counter = 0;
 
-    for (let i = 0; i < inputText.length; i++) {
-      if (this.#isExistInCharacterSet(inputText[i])) {
+    for (const char of inputText) {
+      if (this.characterSet.has(char.toLowerCase())) {
         counter++;
       }
     }
 
     return counter;
-  }
-
-  #isExistInCharacterSet(character) {
-    return this.characterSet.has(character.toLowerCase());
   }
 }
 
